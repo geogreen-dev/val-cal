@@ -3,7 +3,7 @@
 
 A python script that builds calendar files (.ics) for competetive Valorant matches.
 
-I am running this nightly with the files available at http://vlr.geogreen.cc/. You can then import the URL to the calendar software of your choice.
+I am running this nightly with the files available at http://vlr.geogreen.cc/. You can then import the URL to the calendar software of your choice to receive automatic updates.
 
 
 ```
