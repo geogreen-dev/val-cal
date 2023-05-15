@@ -21,6 +21,6 @@ optional args:
 
 ## Acknowledgements
 
- - [data scraped from vlr.gg](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
+ - [data scraped from vlr.gg](https://vlr.gg)
 
 
