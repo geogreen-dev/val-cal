@@ -60,7 +60,10 @@ def parse_match_page(url):
     # vlr claim to use UTC but in reality they do not
     time = datetime.strptime(date_time, "%Y-%m-%d %H:%M:%S") + timedelta(hours=4)
     league = sanitize_string(league_meta[0])
-    note = sanitize_string(league_meta[1])
+    try:
+        note = sanitize_string(league_meta[1])
+    except:
+        note = ""
     team_one = sanitize_string(teams[0])
     team_two = sanitize_string(teams[1])
     match = Match(id, time, league, team_one, team_two, note)
@@ -169,7 +172,7 @@ if __name__ == "__main__":
      leagues = set()
      teams = set()
 
-     matches = matches.values()
+     matches = disk_matches.values()
 
      for match in matches:
          leagues.add(match.league)

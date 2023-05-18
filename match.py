@@ -12,7 +12,7 @@ class Match:
         self.team_two = team_two
 
     def __repr__(self):
-        return self.league + ": " + self.team_one + " vs. " + self.team_two + " at " + self.time
+        return self.id + ": " + self.league + ": " + self.team_one + " vs. " + self.team_two + " at " + self.time
 
     def is_tbd(self):
         return self.team_one == "TBD" or self.team_two == "TBD"
