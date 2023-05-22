@@ -182,7 +182,7 @@ if __name__ == "__main__":
      logging.info("Building league calendars...")
      for league in leagues:
          league_matches = list(filter(lambda x: x.league==league, matches))
-         build_calendar(league_matches, os.path.join(OUTDIR, CAL_DIR, "leagues", league.replace(':',' -')+".ics"))
+         build_calendar(league_matches, os.path.join(OUTDIR, CAL_DIR, "leagues", league.replace(':',' -').replace('/','+')+".ics"))
 
      logging.info("Building team calendars...")
      for team in teams:
