@@ -15,12 +15,11 @@ class Match:
         return self.id + ": " + self.league + ": " + self.team_one + " vs. " + self.team_two + " at " + self.time
 
     def __eq__(self, other):
-        if isinstance(other, Match):
-            return (self.id == other.id and
-                self.time == other.time and
-                self.league == other.league and
-                ((self.team_one == other.team_one and self.team_two == other.team_two) or (self.team_one == other.team_two and self.team_two == other.team_one)))
-        return false
+        return (self.id == other.id and
+            self.time == other.time and
+            self.league == other.league and
+            ((self.team_one == other.team_one and self.team_two == other.team_two) or (self.team_one == other.team_two and self.team_two == other.team_one)))
+        return False
 
     def is_tbd(self):
         return self.team_one == "TBD" or self.team_two == "TBD"

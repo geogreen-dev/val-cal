@@ -7,7 +7,8 @@ import json
 from ics import Calendar, Event
 from multiprocessing import Pool
 import os
-from .model.match import Match
+import match
+from match import Match
 import logging
 import argparse
 import sys

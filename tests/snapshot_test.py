@@ -1,14 +1,11 @@
 
 import unittest
-import bs4
 import validators
-import json
-from .testutils import match_from_json_file
-from .testutils import soup_from_html
+from testutils import match_from_json_file
+from testutils import soup_from_html
 from unittest.mock import MagicMock
-from .context import src
+from src.match import Match
 from src import val_cal
-import os
 
 class Test(unittest.TestCase):
 
@@ -27,6 +24,9 @@ class Test(unittest.TestCase):
 		# actual URL is irrelevant but we need at least a valid structure as we do some string manip on it
 		actual = val_cal.parse_match_page("https://www.vlr.gg/282834/dsyre-vs-kpi-gaming-crossfire-cup-2023-finals-qf")
 		expected = match_from_json_file("res/future_match_known_all.json")
+		print("x{}x".format(expected.id))
+		print("x{}x".format(actual.id))
+		print(actual.id == expected.id)
 		self.assertEqual(expected, actual)
 
 	def test_parse_match_known_time(self):

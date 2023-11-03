@@ -26,8 +26,8 @@ Testing is currently just comparing previous json outputs vs newly parsed object
 It is fairly brittle as it will not fail should vlr.gg change their site structure. Ultimately some integration tests should cover this.
 
 ```
-# From project root
-python -m unittest discover .
+# From project root will run pytest
+make test
 ```
 
 ## Acknowledgements

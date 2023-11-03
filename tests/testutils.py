@@ -2,8 +2,7 @@
 import json
 import os
 import bs4
-from .context import src
-from src.model.match import Match
+from src.match import Match
 
 def match_from_json_file(filepath):
 	test_dir = os.path.dirname(__file__)
