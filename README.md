@@ -1,6 +1,7 @@
 
 # val_cal 
  ![build+test](https://github.com/geogreen-dev/val-cal/actions/workflows/python-app.yml/badge.svg)
+ ![Integration](https://github.com/geogreen-dev/val-cal/actions/workflows/integration.yml/badge.svg) If this is failing with the above succeeding likely vlr.gg have changed their site structure.
 
 A python script that builds calendar files (.ics) for competetive Valorant matches.
 
@@ -22,13 +23,11 @@ optional args:
 
 ## Testing
 
-Testing is currently just comparing previous json outputs vs newly parsed objects from the same html stored in tests/res. 
-
-It is fairly brittle as it will not fail should vlr.gg change their site structure. Ultimately some integration tests should cover this.
-
+Using pytest with run config wrapped in Makefile
 ```
 # From project root will run pytest
-make test
+make test-unit
+make test-integration
 ```
 
 ## Acknowledgements
