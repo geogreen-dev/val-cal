@@ -1,5 +1,6 @@
 
-# val_cal
+# val_cal 
+ ![build+test](https://github.com/geogreen-dev/val-cal/actions/workflows/python-app.yml/badge.svg)
 
 A python script that builds calendar files (.ics) for competetive Valorant matches.
 
