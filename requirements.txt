@@ -14,3 +14,4 @@ soupsieve==2.4.1
 TatSu==5.8.3
 urllib3==2.0.2
 webencodings==0.5.1
+validators==0.22.0
