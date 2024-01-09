@@ -12,7 +12,7 @@ I was fed up with so many websites providing this info but no good way to add it
 Matches are split by team and league so you can customise your subscription. You can then import the URL to the calendar software of your choice to receive automatic updates. I have only tested with Google Calendars but .ics will likely work in your software of choice.
 
 ## Usage
-```
+```shell
 usage: val-cal.py [-h] [-f] [-t THREADS] -o OUTDIR
 
 required args:
@@ -28,7 +28,7 @@ optional args:
 ## Testing
 
 Using pytest with run config wrapped in Makefile
-```
+```shell
 # From project root will run pytest
 make test-unit
 make test-integration
